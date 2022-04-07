@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let str = prompt("nhập vào 1 chuỗi : ")
+    let arr = str.split("")
+    function vitri(arr){
+        let count = 0;
+        let Vowel = ['o','t','y','i','m']
+        for (let i = 0;i < arr.length;i++){
+            for(let j = 0; j<Vowel.length;j++)
+            if(arr[i] === Vowel[j]){
+                count++;
+            }
+        }
+        return (count != 0 ) ? count : false;
+    }
+    alert("tổng số nguyên âm"+ " " +vitri(arr));
+    </script>
+</body>
+</html>

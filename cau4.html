@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           let Staff = function (fullName,email){
+            this.fullName = fullName;
+            this.email =email ;
+         this.getFullName= function (fullName){
+           return  this.fullName ;
+         }
+         this.getEmail = function (email){
+           return  this.email ;
+         }
+         this.setFullName = function (fullName) {
+                this.fullName = fullName;
+            }
+            this.setEmail = function (email) {
+                this.email = email;
+            }
+        this.toString = function (){
+            return (`${this.fullName},${this.email}`)
+        }
+    };
+    let david = new Staff('david','david@gmail.com');
+    david.setFullName('David Do');
+    david.setEmail('david.do@gmail.com');
+    alert(david.toString());
+    var Staffs = [
+        new Staff("daivid" , " daviddo@gmail.com") ,
+        new Staff("tom ","tomdo@gmail.com"),
+        new Staff("cherry","cherydo@gmail.com")
+    ]
+        for (var i =  0 ; i < Staffs.length ; i++){
+ console.log(Staffs[i].toString());
+        }
+  
+    
+    </script>
+</body>
+</html>
